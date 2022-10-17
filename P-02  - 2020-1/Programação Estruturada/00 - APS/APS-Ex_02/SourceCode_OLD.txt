@@ -1,0 +1,40 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<locale.h>
+#include<string.h>
+
+//--------------------------------------------------------------------------------------------------//
+typedef struct
+{
+    int id;
+    float price;
+    char description[500];
+}product;
+//-------------------------------------------------------------------------------------------------//
+int main(void)
+{
+char confirm;
+    puts("Deseja registrar um novo produto?(S/N)");
+    scanf("%s",&confirm);
+    getConfirm:
+    switch(confirm)
+    {
+        case 'S':
+        case 's':
+            //commando
+            
+            break;
+        case 'N':
+        case 'n':
+            printf("Test N\n");
+            goto shutdown;
+            break;
+        default:
+            puts("Erro! Tente novamente:");
+            scanf("%s",&confirm);
+            goto getConfirm;
+    }
+shutdown:
+printf("Free();");
+//free(allocation);
+}

@@ -1,0 +1,140 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<locale.h>
+#include<string.h>
+#define exams 3
+#define TotalClass ClassSize
+//--------------------------------------------------------------------------------------------------//
+typedef struct
+{
+    int id,approval;
+    char name[100];
+    float Grades[exams],finalGrade;
+}student;
+//--------------------------------------------------------------------------------------------------//
+void getFinalGrade(float grades[],float *final_grade)
+{
+float sum=0,exAux=exams;
+    for(int counter=0;counter<exams-1;counter++)
+        {
+            int higherIndex=counter;
+            for(int newCounter=counter+1;newCounter<exams;newCounter++){
+                if(grades[newCounter]>grades[higherIndex])
+                    higherIndex=newCounter;
+            }
+            if(grades[counter]!=grades[higherIndex]){
+                float aux=grades[counter];
+                grades[counter]=grades[higherIndex];
+                grades[higherIndex]=aux;
+            }
+    }
+    if(exams%2==0 && exams!=2)
+    {
+        for(int counter=0;counter<exAux/2;counter++)
+        {
+            sum+=grades[counter];
+        }
+        *final_grade=sum/(exAux/2);
+    }
+    else if(exams%2!=0)
+    {
+        for(int counter=0;counter<((exAux/2)+0.5);counter++)
+        {
+            sum+=grades[counter];
+        }
+        *final_grade=sum/((exAux/2)+0.5);
+    }
+    else
+    {
+        *final_grade=(grades[0]+grades[1])/2;
+    }
+}
+//-------------------------------------------------------------------------------------------------//
+void RegisterStudent(student *class)
+{
+float g[exams];
+    printf("Nome: ");
+    fgets(class->name,100,stdin);
+    fflush(stdin);
+    printf("Matrícula: ");
+    scanf("%d",&class->id);
+    for(int counter=0;counter<exams;counter++)
+    {
+        printf("Nota da AV%d: ",counter+1);
+        getGrade:
+        scanf("%f",&class->Grades[counter]);
+        setbuf(stdin,NULL);
+        if(class->Grades[counter]>10||class->Grades[counter]<0)
+        {
+            printf("Nota inválida. Tente Novamente:");
+            goto getGrade;
+        }
+        g[counter]=class->Grades[counter];
+    }
+    getFinalGrade(g,&class->finalGrade);
+    if(class->finalGrade>=7)
+    {
+        class->approval=1;
+    }else{
+        class->approval=0;
+    }
+}
+//---------------------------------------------------------------------------------------------------//
+void printData(student *class)
+{
+    printf("Nome:\t%s",class->name);
+    printf("Matrícula:\t%d\n",class->id);
+    for(int counter=0;counter<exams;counter++)
+    {
+        printf("Nota de AV%d:\t%1.2f\n",counter,class->Grades[counter]);
+    }
+    printf("Média Final:\t%1.2f\n",class->finalGrade);
+    printf("Situação:\t");
+    switch(class->approval)
+    {
+        case 0:
+            printf("Reprovado.\n");
+            break;
+        case 1:
+            printf("Aprovado.\n");
+            break;
+        default:
+            printf("Indefinido\n");
+    }
+}
+//---------------------------------------------------------------------------------------------------//
+int main(void)
+{setlocale(LC_ALL,"Portuguese");
+
+int ClassSize;
+
+    printf("Quantos alunos existem nessa turma?(Digite 0 para cancelar a operação)\n");
+    scanf("%d",&ClassSize);
+    setbuf(stdin,NULL);
+
+    student *Class=(student*)malloc(TotalClass*sizeof(student));
+    
+    if(Class==NULL)
+    {
+        printf("Erro! Estouro de Memória!");
+        goto shutdown;
+    }
+
+    for(int counter=0;counter<TotalClass;counter++)
+    {
+        printf("Aluno #%d:\n",counter+1);
+        RegisterStudent(&Class[counter]);
+        puts("\n//-----------------------------------------------------------------------//\n");
+    }
+
+printf("Enviando Dados de todos os alunos registrados:\n//-----------------------------------------------------------------------//\n");
+    for(int counter=0;counter<TotalClass;counter++)
+    {
+        printData(&Class[counter]);
+        if(counter!=TotalClass-1)
+        puts("\n//-----------------------------------------------------------------------//\n");
+    }
+shutdown:
+free(Class);
+}
+//Por João Pedro Espechit Silveira - 2019200901

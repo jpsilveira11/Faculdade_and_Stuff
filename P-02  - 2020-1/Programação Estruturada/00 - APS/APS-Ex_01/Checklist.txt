@@ -1,0 +1,5 @@
+#1 - Check - A estrutura deve conter a matrícula do aluno, nome, nota da primeira prova, nota da segunda prova e nota da terceira prova
+#2 - Check - Perguntar ao usuário a quantidade de alunos na turma
+#3 - Check - Criar um vetor de alunos para essa quantidade de alunos, utilizando alocação dinâmica
+#4 - Check - Cadastrar todos os alunos
+#5 - Check - Exibir os dados de cada aluno, incluindo a média dele e informando se ele foi aprovado ou reprovado. Considere o valor 7,0 para aprovação
