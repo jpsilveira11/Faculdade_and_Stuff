@@ -1,0 +1,58 @@
+# depslib dependency file v1.0
+1428370271 source:d:\eugenio\cursos\uezo\ed_i\unidade_v_vi_vii\exemplo_2\main.c
+	<stdio.h>
+	"TADs_lineares_aloc_enc.h"
+
+1421778757 d:\eugenio\cursos\uezo\ed_i\unidade_v_vi_vii\exemplo_2\tads_lineares_aloc_enc.h
+
+1421779505 source:d:\eugenio\cursos\uezo\ed_i\unidade_v_vi_vii\exemplo_2\lista.c
+	<stdio.h>
+	"TADs_lineares_aloc_enc.h"
+
+1421780269 source:d:\eugenio\cursos\uezo\ed_i\unidade_v_vi_vii\exemplo_2\pilha.c
+	<stdio.h>
+	"TADs_lineares_aloc_enc.h"
+
+1421780298 source:d:\eugenio\cursos\uezo\ed_i\unidade_v_vi_vii\exemplo_2\fila.c
+	<stdio.h>
+	"TADs_lineares_aloc_enc.h"
+
+1421783900 source:d:\exemplo_2\fila.c
+	<stdio.h>
+	"TADs_lineares_aloc_enc.h"
+
+1421782358 d:\exemplo_2\tads_lineares_aloc_enc.h
+
+1421783106 source:d:\exemplo_2\lista.c
+	<stdio.h>
+	"TADs_lineares_aloc_enc.h"
+
+1421783870 source:d:\exemplo_2\pilha.c
+	<stdio.h>
+	"TADs_lineares_aloc_enc.h"
+
+1585426170 source:d:\exemplo_2\main.c
+	<stdio.h>
+	"TADs_lineares_aloc_enc.h"
+
+1421783900 source:c:\users\jp silveira\desktop\av1\exemplo_2\fila.c
+	<stdio.h>
+	"TADs_lineares_aloc_enc.h"
+
+1600865774 c:\users\jp silveira\desktop\av1\exemplo_2\tads_lineares_aloc_enc.h
+
+1421783106 source:c:\users\jp silveira\desktop\av1\exemplo_2\lista.c
+	<stdio.h>
+	"TADs_lineares_aloc_enc.h"
+
+1421783870 source:c:\users\jp silveira\desktop\av1\exemplo_2\pilha.c
+	<stdio.h>
+	"TADs_lineares_aloc_enc.h"
+
+1601342573 source:c:\users\jp silveira\desktop\av1\exemplo_2\main.c
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+	<string.h>
+	"TADs_lineares_aloc_enc.h"
+

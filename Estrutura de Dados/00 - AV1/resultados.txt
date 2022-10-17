@@ -1,0 +1,83 @@
+TESTE #1:
+//--------------------------------------------------------------------------------------------------------------------//
+//=======================================================AV1==========================================================//
+//--------------------------------------------------------------------------------------------------------------------//
+
+Monte a estrutura da expressao:
+Obs. #1: Letras de 'A' à 'Z' representarao números
+Obs. #2: Caracteres como 'ç' nao sao válidos e letras repetidas nao contarao como um mesmo algarismo.
+Obs. #3: '+, -, * e /' representarao operaçoes de soma, subtraçao, multiplicaçao e divisao.
+Obs. #4: Insira '_' para finalizar essa etapa da operaçao.
+Obs. #5: Valores fracionários serao arredondados para menos, se positivos, e para mais, se negativos.
+Obs. #6: Máx. de 50 itens.
+
+Item #1:        a
+Item #2:        b
+Item #3:        c
+Item #4:        d
+Item #5:        /
+Item #6:        e
+Item #7:        -
+Item #8:        *
+Item #9:        +
+Item #10:       _
+
+Criando estruturas...
+
+Fila da operaçao: a b c d / e - * +
+
+Executando operaçao...
+
+Insira o valor de 'a':  4
+Insira o valor de 'b':  3
+Insira o valor de 'c':  8
+Insira o valor de 'd':  2
+Insira o valor de 'e':  1
+
+O resultado dessa operaçao equivale a 13.
+//--------------------------------------------------------------------------------------------------------------------//
+
+Operaçao bem sucedida.
+Finalizando...
+
+Process returned 0 (0x0)   execution time : 21.079 s
+Press any key to continue.
+
+Teste #2:
+//--------------------------------------------------------------------------------------------------------------------//
+//=======================================================AV1==========================================================//
+//--------------------------------------------------------------------------------------------------------------------//
+
+Monte a estrutura da expressao:
+Obs. #1: Letras de 'A' à 'Z' representarao números
+Obs. #2: Caracteres como 'ç' nao sao válidos e letras repetidas nao contarao como um mesmo algarismo.
+Obs. #3: '+, -, * e /' representarao operaçoes de soma, subtraçao, multiplicaçao e divisao.
+Obs. #4: Insira '_' para finalizar essa etapa da operaçao.
+Obs. #5: Valores fracionários serao arredondados para menos, se positivos, e para mais, se negativos.
+Obs. #6: Máx. de 50 itens.
+
+Item #1:        a
+Item #2:        b
+Item #3:        c
+Item #4:        +
+Item #5:        +
+Item #6:        _
+
+Criando estruturas...
+
+Fila da operaçao: a b c + +
+
+Executando operaçao...
+
+Insira o valor de 'a':  1
+Insira o valor de 'b':  1
+Insira o valor de 'c':  1
+
+O resultado dessa operaçao equivale a 3.
+//--------------------------------------------------------------------------------------------------------------------//
+
+Operaçao bem sucedida.
+Finalizando...
+
+Process returned 0 (0x0)   execution time : 7.875 s
+Press any key to continue.
