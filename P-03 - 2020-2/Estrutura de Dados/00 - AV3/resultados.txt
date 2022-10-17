@@ -1,0 +1,252 @@
+//===================================================QUESTÃO 1=====================================================//
+
+---------
+  Lista
+---------
+1
+0
+42 97 63 81 14
+
+42
+97
+63
+0
+
+81 14
+
+---------
+  Pilha
+---------
+1
+0
+74 22 65 82 49
+
+74
+22
+65
+0
+
+82 49
+
+--------
+  Fila
+--------
+1
+0
+21 37 95 63 72
+
+21
+37
+95
+0
+
+63 72
+
+---------
+AV3 - Q1
+---------
+
+
+Defina o tamanho da pilha: 5
+
+
+Agora, preencha a pilha do tamanho informado:
+Pos #1: 1
+Pos #2: 2
+Pos #3: 3
+Pos #4: 4
+Pos #5: 5
+
+Vetor:  [1, 2, 3, 4, 5]
+Valores empilhados: 5 4 3 2 1
+Pilha invertida: 1 2 3 4 5
+
+
+Process returned 0 (0x0)   execution time : 12.978 s
+Press any key to continue.
+
+//===================================================QUESTÃO 2=====================================================//
+
+---------
+  Lista
+---------
+1
+0
+42 97 63 81 14
+
+42
+97
+63
+0
+
+81 14
+
+---------
+  Pilha
+---------
+1
+0
+74 22 65 82 49
+
+74
+22
+65
+0
+
+82 49
+
+--------
+  Fila
+--------
+1
+0
+21 37 95 63 72
+
+21
+37
+95
+0
+
+63 72
+
+---------
+AV3 - Q2
+---------
+
+Insira n·meros dentro da 1¬ fila(digite 0 para parar)
+Item #1: 1
+Item #2: 2
+Item #3: 3
+Item #4: 0
+
+
+Agora, insira n·meros dentro da 2¬ fila(digite 0 para parar)
+Item #1: 4
+Item #2: 5
+Item #3: 6
+Item #4: 0
+
+Fila 1: 1 2 3
+Fila 2: 4 5 6
+
+Uniπo das duas filas: 1 4 2 5 3 6
+Process returned 0 (0x0)   execution time : 4.639 s
+Press any key to continue.
+
+//===================================================QUESTÃO 3=====================================================//
+
+------------------
+     AV3 - Q3
+------------------
+      D
+         G
+   B
+A
+         H
+      E
+         I
+   C
+      F
+
+B G D E H I F C A
+Process returned 2 (0x2)   execution time : 0.019 s
+Press any key to continue.
+
+//===================================================QUESTÃO 4=====================================================//
+
+---------------------------
+  Arvore Binária de Busca
+---------------------------
+
+Criaçao da árvore vazia
+
+Verificaçao se a árvore criada é vazia -> 1
+
+Impressao da árvore após a inclusao dos nós
+
+   1
+            2
+         3
+            4
+      5
+6
+      7
+   8
+      9
+
+Busca por um nó existente na árvore (chave 7) -> 7
+
+Remoçao de um nó da árvore (chave 1)
+
+         2
+      3
+         4
+   5
+6
+      7
+   8
+      9
+
+Remoçao de um nó da árvore (chave 9)
+
+         2
+      3
+         4
+   5
+6
+      7
+   8
+
+Remoçao de um nó da árvore (chave 8)
+
+         2
+      3
+         4
+   5
+6
+   7
+
+Remoçao de um nó da árvore (chave 6)
+
+      2
+   3
+      4
+5
+   7
+
+Busca por um nó inexistente na árvore (chave 9)
+Erro: item inexistente
+
+Inserçao de um nó existente na árvore (chave 3)
+Erro: item existente
+
+Remoçao de um nó inexistente na árvore (chave 8)
+Erro: item inexistente
+
+---------
+AV3 - Q4
+---------
+Quantos números aleatórios você deseja gerar? 10
+
+Valores gerados: 36 29 48 58 23 19 3 40 9 49
+
+            3
+               9
+         19
+      23
+   29
+36
+      40
+   48
+         49
+      58
+
+
+Arvore Binária de Busca após a remoçao das chaves ímpares:
+36
+      40
+   48
+      58
+
+Process returned 1 (0x1)   execution time : 1.986 s
+Press any key to continue.
