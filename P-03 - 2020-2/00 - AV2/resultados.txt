@@ -1,0 +1,191 @@
+Ex1:
+
+
+------------------
+  Arvore Binária
+------------------
+
+1
+1
+0
+1
+1
+0
+1
+1
+0
+1
+0
+0
+0
+1
+   b
+      d
+a
+      e
+   c
+      f
+
+a b d c e f
+b d a e c f
+d b e f c a
+a b c d e f
+a b d c e f
+
+   b
+      d
+a
+
+3
+
+------------------
+ AV2 - Questao 1
+------------------
+
+      a
+   *
+      b
++
+         c
+      /
+         d
+   -
+      e
+
+
+Percorrendo a Arvore criada:
+( ( a * b ) + ( ( c / d ) - e ) )
+
+Process returned 0 (0x0)   execution time : 0.151 s
+Press any key to continue.
+
+
+//---------------------------------------------------------------------------------------------------------------//
+
+Ex2:
+
+
+---------------------------
+  Arvore Binária de Busca
+---------------------------
+
+Criaçao da árvore vazia
+
+Verificaçao se a árvore criada é vazia -> 1
+
+Impressao da árvore após a inclusao dos nós
+
+   1 A
+            2 B
+         3 C
+            4 D
+      5 E
+6 F
+      7 G
+   8 H
+      9 I
+
+Busca por um nó existente na árvore (chave 7) -> 7
+
+Remoçao de um nó da árvore (chave 1)
+
+         2 B
+      3 C
+         4 D
+   5 E
+6 F
+      7 G
+   8 H
+      9 I
+
+Remoçao de um nó da árvore (chave 9)
+
+         2 B
+      3 C
+         4 D
+   5 E
+6 F
+      7 G
+   8 H
+
+Remoçao de um nó da árvore (chave 8)
+
+         2 B
+      3 C
+         4 D
+   5 E
+6 F
+   7 G
+
+Remoçao de um nó da árvore (chave 6)
+
+      2 B
+   3 C
+      4 D
+5 E
+   7 G
+
+Busca por um nó inexistente na árvore (chave 9)
+Erro: item inexistente
+
+Inserçao de um nó existente na árvore (chave 3)
+Erro: item existente
+
+Remoçao de um nó inexistente na árvore (chave 8)
+Erro: item inexistente
+
+
+------------------
+ AV2 - Questao 2
+------------------
+
+Digite sua mensagem(Máx. 30 caracteres):
+usei16caracteres
+
+Mensagem a ser enviada:
+usei16caracteres
+
+
+Mensagem embaralhada:
+Char #1: ID: 10 || Pacote:  c
+Char #2: ID: 7 || Pacote:  a
+Char #3: ID: 5 || Pacote:  6
+Char #4: ID: 6 || Pacote:  c
+Char #5: ID: 0 || Pacote:  u
+Char #6: ID: 11 || Pacote:  t
+Char #7: ID: 2 || Pacote:  e
+Char #8: ID: 9 || Pacote:  a
+Char #9: ID: 13 || Pacote:  r
+Char #10: ID: 3 || Pacote:  i
+Char #11: ID: 4 || Pacote:  1
+Char #12: ID: 12 || Pacote:  e
+Char #13: ID: 15 || Pacote:  s
+Char #14: ID: 8 || Pacote:  r
+Char #15: ID: 14 || Pacote:  e
+Char #16: ID: 1 || Pacote:  s
+
+Criando Arvore Binária dos fragmentos da mensagem:
+
+         0 u
+               1 s
+            2 e
+               3 i
+                  4 1
+      5 6
+         6 c
+   7 a
+         8 r
+      9 a
+10 c
+   11 t
+         12 e
+      13 r
+            14 e
+         15 s
+
+
+Reconstruindo a mensagem:
+usei16caracteres
+
+Process returned 0 (0x0)   execution time : 5.168 s
+Press any key to continue.
