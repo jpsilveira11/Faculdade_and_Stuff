@@ -1,0 +1,112 @@
+---------------------------
+  Arvore Binária de Busca
+---------------------------
+
+Criaçao da árvore vazia
+
+Verificaçao se a árvore criada é vazia -> 1
+
+Impressao da árvore após a inclusao dos nós
+
+   1
+            2
+         3
+            4
+      5
+6
+      7
+   8
+      9
+
+Busca por um nó existente na árvore (chave 7) -> 7
+
+Remoçao de um nó da árvore (chave 1)
+
+         2
+      3
+         4
+   5
+6
+      7
+   8
+      9
+
+Remoçao de um nó da árvore (chave 9)
+
+         2
+      3
+         4
+   5
+6
+      7
+   8
+
+Remoçao de um nó da árvore (chave 8)
+
+         2
+      3
+         4
+   5
+6
+   7
+
+Remoçao de um nó da árvore (chave 6)
+
+      2
+   3
+      4
+5
+   7
+
+Busca por um nó inexistente na árvore (chave 9)
+Erro: item inexistente
+
+Inserçao de um nó existente na árvore (chave 3)
+Erro: item existente
+
+Remoçao de um nó inexistente na árvore (chave 8)
+Erro: item inexistente
+
+
+---------------------------
+        Atividade
+---------------------------
+
+
+Quantos acessos você deseja fazer?      10
+
+Vetor de Acessos:       70  35  42  51  75  88  33  84  53  0
+
+Arvore Binária de Busca resultante:
+
+         0
+      33
+   35
+      42
+         51
+            53
+70
+   75
+         84
+      88
+
+
+Agora, insira o acesso que você deseja remover: 42
+
+Item a ser removido:    42
+
+   42
+      51
+         53
+70
+   75
+         84
+      88
+
+
+//------------------------------------------------------------------------------------------------//
+
+Operaçao bem sucedida, finalizando...
+
+Process returned 0 (0x0)   execution time : 12.136 s
+Press any key to continue.
