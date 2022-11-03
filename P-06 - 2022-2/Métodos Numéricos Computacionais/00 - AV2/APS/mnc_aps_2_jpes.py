@@ -110,7 +110,7 @@ cv2_imshow(image)
 print("Grayscale")
 cv2_imshow(img)
 
-img.shape
+alt_img.shape
 
 k=512
 compress_image("Elemental HERO Sunrise - 100%",alt_img,k)
